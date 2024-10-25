@@ -1,7 +1,7 @@
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-app.MapGet("/api/coffee", () => new List<dynamic> {
+app.MapGet("/", () => new List<dynamic> {
 new { CoffeeId = "cappucino", CoffeeName = "Cappucino" },
 new { CoffeeId = "latte", CoffeeName = "Latte" },
 new { CoffeeId = "mocha", CoffeeName = "Mocha" },
